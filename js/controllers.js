@@ -15,6 +15,38 @@ app.controller('TestController', ['$scope', function($scope) {
       choices : [
         '1', '2', '3'
       ]
+    },
+    '3' : {
+      text : '',
+      choices : ['1', '2', '3']
+    },
+    '4' : {
+      text : '',
+      choices : [1, 2, 3]
+    },
+    '5' : {
+      text : '',
+      choices : [1, 2]
+    },
+    '6' : {
+      text : '',
+      choices : [1]
+    },
+    '7' : {
+      text: '',
+      choices : [1]
+    },
+    '8' : {
+      text : '',
+      choices : [1]
+    },
+    '9' : {
+      text : '',
+      choices : [1]
+    },
+    '10' : {
+      text : '',
+      choices : [1]
     }
   }
 }]);

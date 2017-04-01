@@ -9,12 +9,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 </head>
 <body ng-app="test-roskvartal">
-  <nav class="navbar navbar-fixed">
+  <!-- Navbar -->
+  <nav class="navbar navbar-fixed-top">
     <div class="navbar-menu">
       <div class="container">
         <div class="row">
           <div class="col-xs-5">
-            <a id="logo" class="pull-left"href="https://roskvartal.ru/"></a>
+            <a class="logo pull-left"href="https://roskvartal.ru/"></a>
             <a id="products" class="pull-left">Школа ЖКХ<i class="fa fa-fw fa-angle-down"></i></a>
           </div>
           <div class="col-xs-7">
@@ -31,6 +32,7 @@
       </div>
     </div>
   </nav>
+  <!---->
   <!-- Cover -->
   <div class="cover">
     <div class="container title" ng-controller="TestController">
@@ -40,6 +42,7 @@
       </div>
     </div>
   </div>
+  <!---->
   <!-- Quiz -->
   <div ng-controller="TestController">
     <div class="container">
@@ -50,33 +53,117 @@
       </div>
 
       <div class="col-xs-8">
-        <div class="test-block">
+        <div class="quiz">
           <h2>Тестирование по курсу</h2>
-          <div class="test">
+          <div class="quiz-container">
             <div class="questions-block">
-              <ul class="questions">
-                <li ng-repeat="question in questions track by $index" ng-attr-class="{{ ($index === 0)?'active':'' }}">{{$index + 1}}.</li>
+              <ul>
+                <li ng-repeat="question in questions track by $index" ng-attr-class="{{ ($index === 0)?'question-active':'' }}">{{$index + 1}}.</li>
               </ul>
             </div>
             <div class="task">
-              <div>
-                <span>{{}}</span>
-                <div class="variants">
-                  <div class="possible">
+              <div class="task-container">
+                <span>Бухгалтерию можно сравнить с нервной системой человека. Она фиксирует все, что происходит внутри его организма. Затем, собрав информацию, она принимает решения и управляет каждым движением тела. Бухучет должен делать то же самое! Только внутри организма предприятия. На предприятие могут свалиться разные раздражители. Но только некоторые из них задевают нервы бухгалтерского учета и заставляют его фиксировать, группировать и передавать дальше информацию.</span>
+                <div class="quiz-variants">
+                  <div class="choice">
                     <input type="radio" name="radio" id="my_radio_button_id" />
                     <label for="my_radio_button_id">
                       <span class="button-radio"></span>
-                      <span class="button-radio-content">{{ choice }}<span>
+                      <span class="button-radio-content">Да, конечно<span>
+                    </label>
+                  </div>
+                  <div class="choice">
+                    <input type="radio" name="radio" id="my_radio_button_id2" />
+                    <label for="my_radio_button_id2">
+                      <span class="button-radio"></span>
+                      <span class="button-radio-content">Нет, разумеется<span>
+                    </label>
+                  </div>
+                  <div class="choice">
+                    <input type="radio" name="radio" id="my_radio_button_id3" />
+                    <label for="my_radio_button_id3">
+                      <span class="button-radio"></span>
+                      <span class="button-radio-content">Вы о чём?<span>
                     </label>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="quiz-buttons">
+            <button class="button button-hint">Подсказка</button>
+            <button class="button button-next">Следующий</button>
+          </div>
+        </div>
+        <div class="hint">
+          <div class="hint-button">
+            <button class="button button-hint-close">скрыть</button>
+          </div>
+          <div class="hint-text">п. 5. Периодичность оказания услуг и выполнения работ, предусмотренных перечнем услуг и работ, определяется с учетом требований, установленных законодательством Российской Федерации. По решению собственников помещений в многоквартирном доме может устанавливаться более частая периодичность оказания услуг и выполнения работ, чем это предусмотрено законодательством Российской Федерации.</div>
         </div>
       </div>
-
     </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer-cover">
+    <footer>
+      <div class="empty">
+      </div>
+      <div class="gradient">
+        <div class="container">
+          <div class="col-xs-3">
+            <a class="logo pull-left footer-logo" href="https://roskvartal.ru/"></a>
+          </div>
+          <div class="col-xs-offset-1 col-xs-8">
+            <!-- Headers -->
+            <div class="row">
+              <div class="col-xs-4">
+                <h5>Компания</h5>
+              </div>
+              <div class="col-xs-4">
+                <h5>Услуги</h5>
+              </div>
+              <div class="col-xs-4">
+                <h5>Блог</h5>
+              </div>
+            </div>
+            <!---->
+            <!-- Links -->
+            <div class="row">
+              <div class="col-xs-4">
+                <ul class="links">
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Команда</a></li>
+                  <li><a href="#">Работа у нас</a></li>
+                  <li><a href="#">Официальные документы</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-4">
+                <ul class="links">
+                  <li><a href="#">ГИС ЖКХ</a></li>
+                  <li><a href="#">Юридическая поддержка</a></li>
+                  <li><a href="#">Сайт для УК</a></li>
+                  <li><a href="#">Обучение</a></li>
+                  <li><a href="#">Лицензирование УК</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-4">
+                <ul class="links">
+                  <li><a href="#">Свежие статьи</a></li>
+                  <li><a href="#">ГИС ЖКХ</a></li>
+                  <li><a href="#">Раскрытие информации</a></li>
+                  <li><a href="#">Лицензирование</a></li>
+                  <li><a href="#">Вебинары</a></li>
+                </ul>
+              </div>
+            </div>
+            <!---->
+          </div>
+        </div>
+      </div>
+      <div class="bar">
+      </div>
+    </footer>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
