@@ -18,12 +18,24 @@
             <a class="logo pull-left"href="https://roskvartal.ru/"></a>
             <div class="navbar-products">
               <a id="products" class="pull-left" data-toggle="dropdown">Школа ЖКХ<i class="fa fa-fw fa-angle-down"></i></a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" ng-controller="ProductsController">
                 <div class="triangle">
-                  <div class="angle"></div>
+                  <div class="rhombus"></div>
                 </div>
-                <li>Product1</li>
-                <li>Product2</li>
+                <li ng-repeat="product in products">
+                  <a href="#">
+                    <div class="col-xs-4">
+                      <div class="pic">
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="desc">
+                        <h5>{{ product.name }}</h5>
+                        <span>{{ product.desc }}</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
