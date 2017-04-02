@@ -7,6 +7,12 @@ body {
 }
 /* Navbar */
 .navbar-menu {
+  transition: background-color 0.3s ease-out;
+}
+.colored {
+  background-color: #066ac3;
+}
+.navbar-menu {
   height: 65px;
   padding: 12px 0px;
   margin: 0 auto 15px auto;
