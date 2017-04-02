@@ -90,6 +90,9 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
       $scope.active++;
       if ($scope.active < $scope.questions.length) {
         $scope.getQuestion($scope.active);
+        $("input:radio[name='answer']").each(function(i) {
+          this.checked = false;
+        });
       }
       else {
         $scope.active--;

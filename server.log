@@ -662,3 +662,179 @@
 [2017-04-02 23:21:33.683] [INFO] [default] - Request for /testCheck received.
 [2017-04-02 23:21:33.684] [TRACE] [default] - Received POST data chunk '[{"number":0,"answer":0},{"number":1,"answer":1},{"number":2,"answer":1}]'.
 [2017-04-02 23:21:33.685] [TRACE] [default] - About to route a request for /testCheck
+[2017-04-02 23:33:08.512] [INFO] [default] - Server started on port 8080
+[2017-04-02 23:33:08.525] [INFO] [default] - Log level TRACE
+[2017-04-02 23:33:09.833] [INFO] [default] - Request for / received.
+[2017-04-02 23:33:09.837] [TRACE] [default] - About to route a request for /
+[2017-04-02 23:33:09.838] [INFO] [default] - Request handler 'start' was called
+[2017-04-02 23:34:01.450] [INFO] [default] - Request for / received.
+[2017-04-02 23:34:01.451] [TRACE] [default] - About to route a request for /
+[2017-04-02 23:34:01.452] [INFO] [default] - Request handler 'start' was called
+[2017-04-02 23:34:01.615] [INFO] [default] - Request for /css/test-roskvartal.css received.
+[2017-04-02 23:34:01.616] [TRACE] [default] - About to route a request for /css/test-roskvartal.css
+[2017-04-02 23:34:01.617] [INFO] [default] - 'css/test-roskvartal.css' is requested
+[2017-04-02 23:34:01.618] [INFO] [default] - Request for /js/controllers.js received.
+[2017-04-02 23:34:01.618] [TRACE] [default] - About to route a request for /js/controllers.js
+[2017-04-02 23:34:01.619] [INFO] [default] - 'js/controllers.js' is requested
+[2017-04-02 23:34:02.021] [INFO] [default] - Request for /img/logo.png received.
+[2017-04-02 23:34:02.022] [TRACE] [default] - About to route a request for /img/logo.png
+[2017-04-02 23:34:02.022] [INFO] [default] - 'img/logo.png' is requested
+[2017-04-02 23:34:02.035] [INFO] [default] - Request for /img/cover.jpg received.
+[2017-04-02 23:34:02.036] [TRACE] [default] - About to route a request for /img/cover.jpg
+[2017-04-02 23:34:02.036] [INFO] [default] - 'img/cover.jpg' is requested
+[2017-04-02 23:34:02.037] [INFO] [default] - Request for /img/next.png received.
+[2017-04-02 23:34:02.037] [TRACE] [default] - About to route a request for /img/next.png
+[2017-04-02 23:34:02.038] [INFO] [default] - 'img/next.png' is requested
+[2017-04-02 23:34:02.039] [INFO] [default] - Request for /img/footer.png received.
+[2017-04-02 23:34:02.039] [TRACE] [default] - About to route a request for /img/footer.png
+[2017-04-02 23:34:02.040] [INFO] [default] - 'img/footer.png' is requested
+[2017-04-02 23:34:02.042] [INFO] [default] - Request for /img/soc_facebook.png received.
+[2017-04-02 23:34:02.044] [TRACE] [default] - About to route a request for /img/soc_facebook.png
+[2017-04-02 23:34:02.045] [INFO] [default] - 'img/soc_facebook.png' is requested
+[2017-04-02 23:34:02.045] [INFO] [default] - Request for /img/soc_vk.png received.
+[2017-04-02 23:34:02.045] [TRACE] [default] - About to route a request for /img/soc_vk.png
+[2017-04-02 23:34:02.046] [INFO] [default] - 'img/soc_vk.png' is requested
+[2017-04-02 23:34:02.047] [INFO] [default] - Request for /img/soc_youtube.png received.
+[2017-04-02 23:34:02.050] [TRACE] [default] - About to route a request for /img/soc_youtube.png
+[2017-04-02 23:34:02.050] [INFO] [default] - 'img/soc_youtube.png' is requested
+[2017-04-02 23:34:02.064] [INFO] [default] - Request for /img/soc_ig.png received.
+[2017-04-02 23:34:02.067] [TRACE] [default] - About to route a request for /img/soc_ig.png
+[2017-04-02 23:34:02.067] [INFO] [default] - 'img/soc_ig.png' is requested
+[2017-04-02 23:35:27.031] [INFO] [default] - Request for / received.
+[2017-04-02 23:35:27.032] [TRACE] [default] - About to route a request for /
+[2017-04-02 23:35:27.033] [INFO] [default] - Request handler 'start' was called
+[2017-04-02 23:35:27.321] [INFO] [default] - Request for /css/test-roskvartal.css received.
+[2017-04-02 23:35:27.323] [TRACE] [default] - About to route a request for /css/test-roskvartal.css
+[2017-04-02 23:35:27.324] [INFO] [default] - 'css/test-roskvartal.css' is requested
+[2017-04-02 23:35:27.452] [INFO] [default] - Request for /img/soc_youtube.png received.
+[2017-04-02 23:35:27.453] [TRACE] [default] - About to route a request for /img/soc_youtube.png
+[2017-04-02 23:35:27.453] [INFO] [default] - 'img/soc_youtube.png' is requested
+[2017-04-02 23:35:27.460] [INFO] [default] - Request for /img/soc_facebook.png received.
+[2017-04-02 23:35:27.461] [TRACE] [default] - About to route a request for /img/soc_facebook.png
+[2017-04-02 23:35:27.463] [INFO] [default] - 'img/soc_facebook.png' is requested
+[2017-04-02 23:35:27.465] [INFO] [default] - Request for /img/cover.jpg received.
+[2017-04-02 23:35:27.466] [TRACE] [default] - About to route a request for /img/cover.jpg
+[2017-04-02 23:35:27.466] [INFO] [default] - 'img/cover.jpg' is requested
+[2017-04-02 23:35:27.467] [INFO] [default] - Request for /img/soc_vk.png received.
+[2017-04-02 23:35:27.468] [TRACE] [default] - About to route a request for /img/soc_vk.png
+[2017-04-02 23:35:27.468] [INFO] [default] - 'img/soc_vk.png' is requested
+[2017-04-02 23:35:27.469] [INFO] [default] - Request for /img/soc_ig.png received.
+[2017-04-02 23:35:27.469] [TRACE] [default] - About to route a request for /img/soc_ig.png
+[2017-04-02 23:35:27.469] [INFO] [default] - 'img/soc_ig.png' is requested
+[2017-04-02 23:35:27.470] [INFO] [default] - Request for /img/footer.png received.
+[2017-04-02 23:35:27.470] [TRACE] [default] - About to route a request for /img/footer.png
+[2017-04-02 23:35:27.471] [INFO] [default] - 'img/footer.png' is requested
+[2017-04-02 23:35:27.475] [INFO] [default] - Request for /img/next.png received.
+[2017-04-02 23:35:27.478] [TRACE] [default] - About to route a request for /img/next.png
+[2017-04-02 23:35:27.478] [INFO] [default] - 'img/next.png' is requested
+[2017-04-02 23:35:27.479] [INFO] [default] - Request for /img/logo.png received.
+[2017-04-02 23:35:27.484] [TRACE] [default] - About to route a request for /img/logo.png
+[2017-04-02 23:35:27.486] [INFO] [default] - 'img/logo.png' is requested
+[2017-04-02 23:35:27.640] [INFO] [default] - Request for /js/controllers.js received.
+[2017-04-02 23:35:27.641] [TRACE] [default] - About to route a request for /js/controllers.js
+[2017-04-02 23:35:27.641] [INFO] [default] - 'js/controllers.js' is requested
+[2017-04-02 23:36:37.575] [INFO] [default] - Request for / received.
+[2017-04-02 23:36:37.576] [TRACE] [default] - About to route a request for /
+[2017-04-02 23:36:37.576] [INFO] [default] - Request handler 'start' was called
+[2017-04-02 23:36:37.738] [INFO] [default] - Request for /css/test-roskvartal.css received.
+[2017-04-02 23:36:37.740] [TRACE] [default] - About to route a request for /css/test-roskvartal.css
+[2017-04-02 23:36:37.740] [INFO] [default] - 'css/test-roskvartal.css' is requested
+[2017-04-02 23:36:37.743] [INFO] [default] - Request for /js/controllers.js received.
+[2017-04-02 23:36:37.744] [TRACE] [default] - About to route a request for /js/controllers.js
+[2017-04-02 23:36:37.744] [INFO] [default] - 'js/controllers.js' is requested
+[2017-04-02 23:36:38.138] [INFO] [default] - Request for /img/logo.png received.
+[2017-04-02 23:36:38.140] [TRACE] [default] - About to route a request for /img/logo.png
+[2017-04-02 23:36:38.140] [INFO] [default] - 'img/logo.png' is requested
+[2017-04-02 23:36:38.141] [INFO] [default] - Request for /img/cover.jpg received.
+[2017-04-02 23:36:38.141] [TRACE] [default] - About to route a request for /img/cover.jpg
+[2017-04-02 23:36:38.142] [INFO] [default] - 'img/cover.jpg' is requested
+[2017-04-02 23:36:38.142] [INFO] [default] - Request for /img/next.png received.
+[2017-04-02 23:36:38.142] [TRACE] [default] - About to route a request for /img/next.png
+[2017-04-02 23:36:38.142] [INFO] [default] - 'img/next.png' is requested
+[2017-04-02 23:36:38.143] [INFO] [default] - Request for /img/footer.png received.
+[2017-04-02 23:36:38.144] [TRACE] [default] - About to route a request for /img/footer.png
+[2017-04-02 23:36:38.144] [INFO] [default] - 'img/footer.png' is requested
+[2017-04-02 23:36:38.145] [INFO] [default] - Request for /img/soc_facebook.png received.
+[2017-04-02 23:36:38.145] [TRACE] [default] - About to route a request for /img/soc_facebook.png
+[2017-04-02 23:36:38.145] [INFO] [default] - 'img/soc_facebook.png' is requested
+[2017-04-02 23:36:38.145] [INFO] [default] - Request for /img/soc_vk.png received.
+[2017-04-02 23:36:38.145] [TRACE] [default] - About to route a request for /img/soc_vk.png
+[2017-04-02 23:36:38.146] [INFO] [default] - 'img/soc_vk.png' is requested
+[2017-04-02 23:36:38.162] [INFO] [default] - Request for /img/soc_youtube.png received.
+[2017-04-02 23:36:38.167] [TRACE] [default] - About to route a request for /img/soc_youtube.png
+[2017-04-02 23:36:38.167] [INFO] [default] - 'img/soc_youtube.png' is requested
+[2017-04-02 23:36:38.167] [INFO] [default] - Request for /img/soc_ig.png received.
+[2017-04-02 23:36:38.168] [TRACE] [default] - About to route a request for /img/soc_ig.png
+[2017-04-02 23:36:38.168] [INFO] [default] - 'img/soc_ig.png' is requested
+[2017-04-02 23:37:28.979] [INFO] [default] - Request for / received.
+[2017-04-02 23:37:28.980] [TRACE] [default] - About to route a request for /
+[2017-04-02 23:37:28.980] [INFO] [default] - Request handler 'start' was called
+[2017-04-02 23:37:29.140] [INFO] [default] - Request for /css/test-roskvartal.css received.
+[2017-04-02 23:37:29.142] [TRACE] [default] - About to route a request for /css/test-roskvartal.css
+[2017-04-02 23:37:29.142] [INFO] [default] - 'css/test-roskvartal.css' is requested
+[2017-04-02 23:37:29.142] [INFO] [default] - Request for /js/controllers.js received.
+[2017-04-02 23:37:29.143] [TRACE] [default] - About to route a request for /js/controllers.js
+[2017-04-02 23:37:29.144] [INFO] [default] - 'js/controllers.js' is requested
+[2017-04-02 23:37:29.540] [INFO] [default] - Request for /img/logo.png received.
+[2017-04-02 23:37:29.541] [TRACE] [default] - About to route a request for /img/logo.png
+[2017-04-02 23:37:29.542] [INFO] [default] - 'img/logo.png' is requested
+[2017-04-02 23:37:29.542] [INFO] [default] - Request for /img/cover.jpg received.
+[2017-04-02 23:37:29.542] [TRACE] [default] - About to route a request for /img/cover.jpg
+[2017-04-02 23:37:29.543] [INFO] [default] - 'img/cover.jpg' is requested
+[2017-04-02 23:37:29.544] [INFO] [default] - Request for /img/next.png received.
+[2017-04-02 23:37:29.545] [TRACE] [default] - About to route a request for /img/next.png
+[2017-04-02 23:37:29.545] [INFO] [default] - 'img/next.png' is requested
+[2017-04-02 23:37:29.545] [INFO] [default] - Request for /img/footer.png received.
+[2017-04-02 23:37:29.545] [TRACE] [default] - About to route a request for /img/footer.png
+[2017-04-02 23:37:29.546] [INFO] [default] - 'img/footer.png' is requested
+[2017-04-02 23:37:29.546] [INFO] [default] - Request for /img/soc_vk.png received.
+[2017-04-02 23:37:29.547] [TRACE] [default] - About to route a request for /img/soc_vk.png
+[2017-04-02 23:37:29.547] [INFO] [default] - 'img/soc_vk.png' is requested
+[2017-04-02 23:37:29.547] [INFO] [default] - Request for /img/soc_facebook.png received.
+[2017-04-02 23:37:29.548] [TRACE] [default] - About to route a request for /img/soc_facebook.png
+[2017-04-02 23:37:29.548] [INFO] [default] - 'img/soc_facebook.png' is requested
+[2017-04-02 23:37:29.562] [INFO] [default] - Request for /img/soc_youtube.png received.
+[2017-04-02 23:37:29.570] [TRACE] [default] - About to route a request for /img/soc_youtube.png
+[2017-04-02 23:37:29.574] [INFO] [default] - 'img/soc_youtube.png' is requested
+[2017-04-02 23:37:29.576] [INFO] [default] - Request for /img/soc_ig.png received.
+[2017-04-02 23:37:29.577] [TRACE] [default] - About to route a request for /img/soc_ig.png
+[2017-04-02 23:37:29.577] [INFO] [default] - 'img/soc_ig.png' is requested
+[2017-04-02 23:39:24.719] [INFO] [default] - Request for / received.
+[2017-04-02 23:39:24.719] [TRACE] [default] - About to route a request for /
+[2017-04-02 23:39:24.720] [INFO] [default] - Request handler 'start' was called
+[2017-04-02 23:40:49.360] [INFO] [default] - Request for / received.
+[2017-04-02 23:40:49.361] [TRACE] [default] - About to route a request for /
+[2017-04-02 23:40:49.361] [INFO] [default] - Request handler 'start' was called
+[2017-04-02 23:40:49.778] [INFO] [default] - Request for /css/test-roskvartal.css received.
+[2017-04-02 23:40:49.779] [TRACE] [default] - About to route a request for /css/test-roskvartal.css
+[2017-04-02 23:40:49.779] [INFO] [default] - 'css/test-roskvartal.css' is requested
+[2017-04-02 23:40:49.903] [INFO] [default] - Request for /img/soc_vk.png received.
+[2017-04-02 23:40:49.904] [TRACE] [default] - About to route a request for /img/soc_vk.png
+[2017-04-02 23:40:49.905] [INFO] [default] - 'img/soc_vk.png' is requested
+[2017-04-02 23:40:49.907] [INFO] [default] - Request for /img/logo.png received.
+[2017-04-02 23:40:49.908] [TRACE] [default] - About to route a request for /img/logo.png
+[2017-04-02 23:40:49.909] [INFO] [default] - 'img/logo.png' is requested
+[2017-04-02 23:40:49.910] [INFO] [default] - Request for /img/cover.jpg received.
+[2017-04-02 23:40:49.911] [TRACE] [default] - About to route a request for /img/cover.jpg
+[2017-04-02 23:40:49.916] [INFO] [default] - 'img/cover.jpg' is requested
+[2017-04-02 23:40:49.923] [INFO] [default] - Request for /img/footer.png received.
+[2017-04-02 23:40:49.923] [TRACE] [default] - About to route a request for /img/footer.png
+[2017-04-02 23:40:49.923] [INFO] [default] - 'img/footer.png' is requested
+[2017-04-02 23:40:49.924] [INFO] [default] - Request for /img/next.png received.
+[2017-04-02 23:40:49.927] [TRACE] [default] - About to route a request for /img/next.png
+[2017-04-02 23:40:49.927] [INFO] [default] - 'img/next.png' is requested
+[2017-04-02 23:40:49.927] [INFO] [default] - Request for /img/soc_facebook.png received.
+[2017-04-02 23:40:49.929] [TRACE] [default] - About to route a request for /img/soc_facebook.png
+[2017-04-02 23:40:49.930] [INFO] [default] - 'img/soc_facebook.png' is requested
+[2017-04-02 23:40:49.958] [INFO] [default] - Request for /img/soc_ig.png received.
+[2017-04-02 23:40:49.997] [TRACE] [default] - About to route a request for /img/soc_ig.png
+[2017-04-02 23:40:49.997] [INFO] [default] - 'img/soc_ig.png' is requested
+[2017-04-02 23:40:49.998] [INFO] [default] - Request for /img/soc_youtube.png received.
+[2017-04-02 23:40:49.998] [TRACE] [default] - About to route a request for /img/soc_youtube.png
+[2017-04-02 23:40:49.998] [INFO] [default] - 'img/soc_youtube.png' is requested
+[2017-04-02 23:40:50.068] [INFO] [default] - Request for /js/controllers.js received.
+[2017-04-02 23:40:50.077] [TRACE] [default] - About to route a request for /js/controllers.js
+[2017-04-02 23:40:50.077] [INFO] [default] - 'js/controllers.js' is requested
+[2017-04-02 23:40:58.734] [INFO] [default] - Request for /testCheck received.
+[2017-04-02 23:40:58.737] [TRACE] [default] - Received POST data chunk '[{"number":0,"answer":0},{"number":1,"answer":1},{"number":2,"answer":2}]'.
+[2017-04-02 23:40:58.738] [TRACE] [default] - About to route a request for /testCheck
