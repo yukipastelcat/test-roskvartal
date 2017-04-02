@@ -1,0 +1,22 @@
+{
+  "name": "test-roskvartal",
+  "version": "0.8.2",
+  "description": "Тестовое задание от РосКвартал",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukipastelcat/test-roskvartal.git"
+  },
+  "author": "Kirill Sedunov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yukipastelcat/test-roskvartal/issues"
+  },
+  "homepage": "https://github.com/yukipastelcat/test-roskvartal#readme",
+  "dependencies": {
+    "log4js": "^1.1.1"
+  }
+}

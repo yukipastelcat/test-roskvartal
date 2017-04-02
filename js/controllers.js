@@ -1,3 +1,5 @@
+var app = angular.module("test-roskvartal", []);
+
 app.controller('MainController', ['$scope', function($scope) {
   $scope.title = 'Бухгалтеру: ведение учета, первичка, проводки';
 }]);
@@ -37,7 +39,7 @@ app.directive('scroll', function($window) {
   }
 });
 
-app.controller('quizController', ['$scope', function($scope, quizFactory) {
+app.controller('quizController', ['$scope', '$http', function($scope, $http) {
   $scope.questions = [
     {
       pics : false,
@@ -102,6 +104,15 @@ app.controller('quizController', ['$scope', function($scope, quizFactory) {
         }
         else {
           /* TO DO: POST-request */
+          var data = JSON.stringify($scope.answers);
+          $http.post('/testCheck', data)
+          .success(function(data, status, headers, config) {
+            console.log(data);
+          }).
+          error(function(data, status, headers, config) {
+            console.log('Error');
+            console.log('Status:' + status + ', headers:' + headers);
+          });
         }
       }
     }
