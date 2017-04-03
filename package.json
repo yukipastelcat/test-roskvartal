@@ -18,5 +18,8 @@
   "homepage": "https://github.com/yukipastelcat/test-roskvartal#readme",
   "dependencies": {
     "log4js": "^1.1.1"
+  },
+  "scripts": {
+    "start": "node index"
   }
 }
