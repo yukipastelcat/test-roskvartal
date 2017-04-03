@@ -133,6 +133,18 @@ function imgBtnNext(response, postData, log) {
   });
 }
 
+function imgBtnRetry(response, postData, log) {
+  log.info("'img/retry.png' is requested");
+  fs.readFile("./img/retry.png", function(err, img) {
+    if (err) {
+      log.error("Error in 'imgBtnRetry' request handler");
+      throw err;
+    }
+    response.writeHead(200, {"Content-Type" : "image/png"});
+    response.end(img);
+  });
+}
+
 function imgOk(response, postData, log) {
   log.info("'img/ok.png' is requested");
   fs.readFile("./img/ok.png", function(err, img) {
@@ -150,6 +162,30 @@ function imgNok(response, postData, log) {
   fs.readFile("./img/nok.png", function(err, img) {
     if (err) {
       log.error("Error in 'imgNok' request handler");
+      throw err;
+    }
+    response.writeHead(200, {"Content-Type" : "image/png"});
+    response.end(img);
+  });
+}
+
+function imgCongrats(response, postData, log) {
+  log.info("'img/congrats.png' is requested");
+  fs.readFile("./img/congrats.png", function(err, img) {
+    if (err) {
+      log.error("Error in 'imgCongrats' request handler");
+      throw err;
+    }
+    response.writeHead(200, {"Content-Type" : "image/png"});
+    response.end(img);
+  });
+}
+
+function imgReturn(response, postData, log) {
+  log.info("'img/return.png' is requested");
+  fs.readFile("./img/return.png", function(err, img) {
+    if (err) {
+      log.error("Error in 'imgReturn' request handler");
       throw err;
     }
     response.writeHead(200, {"Content-Type" : "image/png"});
@@ -184,6 +220,9 @@ exports.imgSocFacebook = imgSocFacebook;
 exports.imgSocYoutube = imgSocYoutube;
 exports.imgSocIG = imgSocIG;
 exports.imgBtnNext = imgBtnNext;
+exports.imgBtnRetry = imgBtnRetry;
 exports.imgOk = imgOk;
 exports.imgNok = imgNok;
+exports.imgCongrats = imgCongrats;
+exports.imgReturn = imgReturn;
 exports.testCheck = testCheck;

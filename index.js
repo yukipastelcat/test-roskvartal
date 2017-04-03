@@ -20,8 +20,11 @@ handle['/img/soc_facebook.png'] = requestHandlers.imgSocFacebook;
 handle['/img/soc_youtube.png'] = requestHandlers.imgSocYoutube;
 handle['/img/soc_ig.png'] = requestHandlers.imgSocIG;
 handle['/img/next.png'] = requestHandlers.imgBtnNext;
+handle['/img/retry.png'] = requestHandlers.imgBtnRetry;
 handle['/img/ok.png'] = requestHandlers.imgOk;
 handle['/img/nok.png'] = requestHandlers.imgNok;
+handle['/img/congrats.png'] = requestHandlers.imgCongrats;
+handle['/img/return.png'] = requestHandlers.imgReturn;
 handle['/testCheck'] = requestHandlers.testCheck;
 
 log.setLevel(config.logLevel);

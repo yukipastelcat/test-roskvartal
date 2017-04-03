@@ -1,9 +1,5 @@
 var app = angular.module("test-roskvartal", []);
 
-app.controller('MainController', ['$scope', function($scope) {
-  $scope.title = 'Бухгалтеру: ведение учета, первичка, проводки';
-}]);
-
 app.controller('ProductsController', ['$scope', function($scope) {
   $scope.products = [
     {
@@ -40,6 +36,7 @@ app.directive('scroll', function($window) {
 });
 
 app.controller('quizController', ['$scope', '$http', function($scope, $http) {
+  $scope.title = 'Бухгалтеру: ведение учета, первичка, проводки';
   $scope.questions = [
     {
       pics : false,
@@ -67,6 +64,7 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
   $scope.answers = [];
   $scope.active = 0;
   $scope.getQuestion = function (id) {
+    $scope.hintClose();
     if ($scope.questions[id]) {
       $scope.question = {};
       $scope.question.pics = $scope.questions[id].pics,
@@ -115,12 +113,15 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
           alert('Вы ответили не на все вопросы');
         }
         else {
-          /* TO DO: POST-request */
           var postData = JSON.stringify($scope.answers);
           $http.post('/testCheck', postData)
           .success(function(data, status, headers, config) {
             check = data;
+            $scope.isSuccessful = true;
             for (var i = 0; i < data.length; i++) {
+              if (!data[i].correct) {
+                $scope.isSuccessful = false;
+              }
               $('#question_' + i).addClass((data[i].correct) ? 'istrue' : 'isfalse');
             }
             $scope.getQuestion($scope.questions.length - 1);
@@ -140,6 +141,13 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
   }
   $scope.hintClose = function () {
     $scope.hintShown = false;
+  }
+  $scope.quizRestart = function () {
+    $scope.isFinished = false;
+    $scope.answers = [];
+    check = [];
+    $('.questions-block li').removeClass('istrue isfalse');
+    $scope.getQuestion(0);
   }
   $scope.getQuestion($scope.active);
 }]);

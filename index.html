@@ -56,8 +56,8 @@
   </nav>
   <!---->
   <!-- Cover -->
-  <div class="cover">
-    <div class="container title" ng-controller="MainController">
+  <div class="cover" ng-controller="quizController">
+    <div class="container title">
       <div class="text-center">
         <span class="badge">Курс</span>
         <h1>{{ title }}</h1>
@@ -66,7 +66,7 @@
   </div>
   <!---->
   <!-- Quiz -->
-  <div  ng-controller="quizController">
+  <div ng-controller="quizController">
     <div class="container">
       <div class="col-xs-2">
         <span class="badge-big">+{{ question.cost }} баллов</span>
@@ -75,7 +75,7 @@
       </div>
 
       <div class="col-xs-8">
-        <div class="quiz">
+        <div class="quiz" ng-show="!isSuccessful">
           <h2>Тестирование по курсу</h2>
           <div class="quiz-container">
             <div class="questions-block">
@@ -105,7 +105,41 @@
           </div>
           <div class="quiz-buttons">
             <button class="button button-hint" ng-click="hintShow()">Подсказка</button>
-            <button class="button button-next" ng-click="getNext()">Следующий</button>
+            <button class="button button-next" ng-click="getNext()" ng-show="!isFinished">Следующий</button>
+            <button class="button button-retry" ng-click="quizRestart()" ng-show="isFinished">Начать заново</button>
+          </div>
+        </div>
+        <div ng-show="isSuccessful">
+          <div class="quiz quiz-end">
+            <h1>Поздравляем!</h1>
+            <h3>Курс "{{ title }}" успешно пройден</h3>
+            <div class="congrats-badges">
+              <div class="badge">
+                <div class="badge-title">Вы получили</div><br>
+                <div class="badge-content">300 баллов</div>
+              </div>
+              <div class="badge">
+                <div class="badge-title">Теперь вы в рейтинге на</div>
+                <div class="badge-content">15 из 2570</div>
+              </div>
+            </div>
+            <div class="congrats-logo">
+            </div>
+          </div>
+          <div class="quiz-end-links">
+            <div class="col-xs-4">
+              <a href="#" class="link">В свой профиль</a>
+            </div>
+            <div class="col-xs-4">
+              <a href="#" class="link">
+                Следующий курс
+              </a>
+            </div>
+            <div class="col-xs-4">
+              <a href="#" class="link">
+                Список курсов
+              </a>
+            </div>
           </div>
         </div>
         <div class="hint" ng-show="hintShown">
@@ -120,8 +154,6 @@
   <!-- Footer -->
   <div class="footer-cover">
     <footer>
-      <div class="empty">
-      </div>
       <div class="gradient">
         <div class="container">
           <div class="col-xs-3">
