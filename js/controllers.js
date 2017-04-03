@@ -55,7 +55,7 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
     {
       pics : true,
       question : 'Бухгалтерию можно сравнить с нервной системой человека. Она фиксирует все, что происходит внутри его организма. Затем, собрав информацию, она принимает решения и управляет каждым движением тела. Бухучет должен делать то же самое! Только внутри организма предприятия. На предприятие могут свалиться разные раздражители. Но только некоторые из них задевают нервы бухгалтерского учета и заставляют его фиксировать, группировать и передавать дальше информацию.',
-      options : [1, 2, 3, 4],
+      options : ['../img/soc_facebook.png', '../img/soc_ig.png', '../img/soc_youtube.png', '../img/soc_vk.png'],
       hint : 'Hint 3',
       cost : 200
     }
@@ -67,16 +67,16 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
     $scope.hintClose();
     if ($scope.questions[id]) {
       $scope.question = {};
-      $scope.question.pics = $scope.questions[id].pics,
-      $scope.question.question = $scope.questions[id].question,
-      $scope.question.options = $scope.questions[id].options,
-      $scope.question.hint = $scope.questions[id].hint,
-      $scope.question.cost = $scope.questions[id].cost
+      $scope.question.pics = $scope.questions[id].pics;
+      $scope.question.question = $scope.questions[id].question;
+      $scope.question.options = $scope.questions[id].options;
+      $scope.question.hint = $scope.questions[id].hint;
+      $scope.question.cost = $scope.questions[id].cost;
       $scope.active = id;
       if ($scope.answers[id]) {
         $('#my_radio_button_' + $scope.answers[id].answer).prop('checked', true);
         $('.badge-answer').removeClass('correct incorrect');
-        $('#option_' + $scope.answers[id].answer).addClass((check[id].correct) ? 'correct' : 'incorrect');
+        $('#optionBadge_' + $scope.answers[id].answer).addClass((check[id].correct) ? 'correct' : 'incorrect');
         if (check[id].correct && $scope.isFinished) {
           $scope.correct = 'Это правильный ответ';
         }

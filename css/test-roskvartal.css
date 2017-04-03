@@ -396,7 +396,13 @@ input[type=radio]:checked + label .button-radio::after {
   width: 107px;
   height: 76px;
   background-color: #60789d;
+  background-repeat: no-repeat;
+  background-position: center center;
   border-radius: 3px;
+}
+.choice-image .button-radio-content::selection {
+  color: transparent;
+  background: transparent;
 }
 /**/
 /* Buttons */
