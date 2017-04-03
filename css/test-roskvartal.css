@@ -217,6 +217,18 @@ body {
   background-color: #1d7ef6;
   color: #fff;
 }
+.istrue {
+  color: transparent;
+  background-image: url('../img/ok.png');
+  background-position: 80% center;
+  background-repeat: no-repeat;
+}
+.isfalse {
+  color: transparent;
+  background-image: url('../img/nok.png');
+  background-position: 80% center;
+  background-repeat: no-repeat;
+}
 /**/
 .task {
   display: flex;

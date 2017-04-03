@@ -79,7 +79,7 @@
           <div class="quiz-container">
             <div class="questions-block">
               <ul ng-repeat="q in questions track by $index">
-                <li ng-click="getQuestion($index)" ng-class="(($index === active) ? 'question-active' : '') + ' ' + ((answers[$index]) ? 'answered' : '')">{{$index + 1}}.</li>
+                <li ng-click="getQuestion($index)" ng-class="(($index === active) ? 'question-active' : '') + ' ' + ((answers[$index]) ? 'answered' : '')" class="isfalse">{{$index + 1}}.</li>
               </ul>
             </div>
             <div class="task">
