@@ -295,6 +295,28 @@ input[type=radio]:checked + label .button-radio::after {
   font-weight: normal;
   font-size: 14px;
 }
+.badge-answer {
+  display: inline-block;
+  color: transparent;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;
+  width: 179px;
+}
+.choice-image .badge-answer {
+  display: block;
+  margin-top: 60px;
+  margin-left: -35px;
+}
+.correct {
+  background-color: #1cb073;
+  color: #fff;
+}
+.incorrect {
+  background-color: #cd630d;
+  color: #fff;
+}
 .choice-image .button-radio {
   float: none;
 }

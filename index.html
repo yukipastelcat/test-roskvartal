@@ -91,7 +91,12 @@
                     <input type="radio" name="answer" id="my_radio_button_{{ $index }}" value="{{ $index }}" />
                     <label for="my_radio_button_{{ $index }}">
                       <span class="button-radio"></span>
-                      <span class="button-radio-content">{{ option }}</span>
+                      <span class="button-radio-content">
+                        {{ option }}
+                        <div id="option_{{ $index }}" class="badge-answer" ng-show="isFinished">
+                          {{ correct }}
+                        </div>
+                      </span>
                     </label>
                   </div>
                 </div>

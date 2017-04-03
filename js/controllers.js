@@ -63,6 +63,7 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
       cost : 200
     }
   ];
+  var check = [];
   $scope.answers = [];
   $scope.active = 0;
   $scope.getQuestion = function (id) {
@@ -76,6 +77,14 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
       $scope.active = id;
       if ($scope.answers[id]) {
         $('#my_radio_button_' + $scope.answers[id].answer).prop('checked', true);
+        $('.badge-answer').removeClass('correct incorrect');
+        $('#option_' + $scope.answers[id].answer).addClass((check[id].correct) ? 'correct' : 'incorrect');
+        if (check[id].correct && $scope.isFinished) {
+          $scope.correct = 'Это правильный ответ';
+        }
+        else {
+          $scope.correct = 'Неправильный ответ';
+        }
       }
     }
   }
@@ -107,12 +116,14 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
         }
         else {
           /* TO DO: POST-request */
-          var data = JSON.stringify($scope.answers);
-          $http.post('/testCheck', data)
+          var postData = JSON.stringify($scope.answers);
+          $http.post('/testCheck', postData)
           .success(function(data, status, headers, config) {
+            check = data;
             for (var i = 0; i < data.length; i++) {
               $('#question_' + i).addClass((data[i].correct) ? 'istrue' : 'isfalse');
             }
+            $scope.getQuestion($scope.questions.length - 1);
           }).
           error(function(data, status, headers, config) {
             alert('Ошибка при коммуникации с сервером.');
