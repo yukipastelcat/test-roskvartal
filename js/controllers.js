@@ -110,11 +110,12 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
           var data = JSON.stringify($scope.answers);
           $http.post('/testCheck', data)
           .success(function(data, status, headers, config) {
-            console.log(data);
+            for (var i = 0; i < data.length; i++) {
+              $('#question_' + i).addClass((data[i].correct) ? 'istrue' : 'isfalse');
+            }
           }).
           error(function(data, status, headers, config) {
-            console.log('Error');
-            console.log('Status:' + status + ', headers:' + headers);
+            alert('Ошибка при коммуникации с сервером.');
           });
         }
       }

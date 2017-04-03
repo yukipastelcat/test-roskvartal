@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 </head>
 <body ng-app="test-roskvartal">
+  <div class="wrapper">
   <!-- Navbar -->
   <nav class="navbar navbar-fixed-top">
     <div class="navbar-menu" scroll ng-class="{colored:navbarColorToggle}">
@@ -78,8 +79,8 @@
           <h2>Тестирование по курсу</h2>
           <div class="quiz-container">
             <div class="questions-block">
-              <ul ng-repeat="q in questions track by $index">
-                <li ng-click="getQuestion($index)" ng-class="(($index === active) ? 'question-active' : '') + ' ' + ((answers[$index]) ? 'answered' : '')" class="isfalse">{{$index + 1}}.</li>
+              <ul>
+                <li id="question_{{ $index }}" ng-click="getQuestion($index)" ng-class="(($index === active) ? 'question-active' : '') + ' ' + ((answers[$index]) ? 'answered' : '')" ng-repeat="q in questions track by $index">{{$index + 1}}.</li>
               </ul>
             </div>
             <div class="task">
@@ -194,6 +195,7 @@
     </div>
     </footer>
   </div>
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/controllers.js"></script>

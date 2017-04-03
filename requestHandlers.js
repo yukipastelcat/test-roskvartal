@@ -133,9 +133,44 @@ function imgBtnNext(response, postData, log) {
   });
 }
 
+function imgOk(response, postData, log) {
+  log.info("'img/ok.png' is requested");
+  fs.readFile("./img/ok.png", function(err, img) {
+    if (err) {
+      log.error("Error in 'imgOk' request handler");
+      throw err;
+    }
+    response.writeHead(200, {"Content-Type" : "image/png"});
+    response.end(img);
+  });
+}
+
+function imgNok(response, postData, log) {
+  log.info("'img/nok.png' is requested");
+  fs.readFile("./img/nok.png", function(err, img) {
+    if (err) {
+      log.error("Error in 'imgNok' request handler");
+      throw err;
+    }
+    response.writeHead(200, {"Content-Type" : "image/png"});
+    response.end(img);
+  });
+}
+
 function testCheck(response, postData, log) {
   console.log("'testCheck' request handler was called");
   console.log(postData);
+  var correct = [0, 2, 1];
+  var result = [];
+  postData = JSON.parse(postData);
+  for (var i = 0; i < postData.length; i++) {
+    var check = {};
+    check.id = postData[i].number;
+    check.correct = (postData[i].answer == correct[i]) ? true : false;
+    result.push(check);
+  }
+  response.writeHead(200, {"Content-Type" : "application/json"});
+  response.end(JSON.stringify(result));
 }
 
 exports.index = index;
@@ -149,4 +184,6 @@ exports.imgSocFacebook = imgSocFacebook;
 exports.imgSocYoutube = imgSocYoutube;
 exports.imgSocIG = imgSocIG;
 exports.imgBtnNext = imgBtnNext;
+exports.imgOk = imgOk;
+exports.imgNok = imgNok;
 exports.testCheck = testCheck;
