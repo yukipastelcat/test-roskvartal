@@ -1,6 +1,9 @@
 var app = angular.module("test-roskvartal", []);
 
 app.controller('ProductsController', ['$scope', function($scope) {
+  $(".navbar-products").on("show.bs.dropdown hide.bs.dropdown", function(){
+      $(this).find(".rotate").toggleClass("down");
+    });
   $scope.products = [
     {
       name : 'ГИС ЖКХ',
