@@ -195,7 +195,6 @@ function imgReturn(response, postData, log) {
 
 function testCheck(response, postData, log) {
   console.log("'testCheck' request handler was called");
-  console.log(postData);
   var correct = [0, 2, 1];
   var result = [];
   postData = JSON.parse(postData);
