@@ -72,6 +72,7 @@ app.controller('quizController', ['$scope', '$http', function($scope, $http) {
   $scope.answers = [];
   $scope.active = 0;
   $scope.getQuestion = function (id) {
+    $('input[name="answer"]').prop('checked', false);
     $scope.hintClose();
     if ($scope.questions[id]) {
       $scope.question = {};
