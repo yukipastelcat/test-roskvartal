@@ -25,6 +25,7 @@ handle['/img/ok.png'] = requestHandlers.imgOk;
 handle['/img/nok.png'] = requestHandlers.imgNok;
 handle['/img/congrats.png'] = requestHandlers.imgCongrats;
 handle['/img/return.png'] = requestHandlers.imgReturn;
+handle['/img/empty.png'] = requestHandlers.imgEmpty;
 handle['/testCheck'] = requestHandlers.testCheck;
 
 log.setLevel(config.logLevel);

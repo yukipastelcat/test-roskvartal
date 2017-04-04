@@ -193,6 +193,18 @@ function imgReturn(response, postData, log) {
   });
 }
 
+function imgEmpty(response, postData, log) {
+  log.info("'img/empty.png' is requested");
+  fs.readFile("./img/empty.png", function(err, img) {
+    if (err) {
+      log.error("Error in 'imgEmpty' request handler");
+      throw err;
+    }
+    response.writeHead(200, {"Content-Type" : "image/png"});
+    response.end(img);
+  });
+}
+
 function testCheck(response, postData, log) {
   console.log("'testCheck' request handler was called");
   var correct = [0, 2, 1];
@@ -224,4 +236,5 @@ exports.imgOk = imgOk;
 exports.imgNok = imgNok;
 exports.imgCongrats = imgCongrats;
 exports.imgReturn = imgReturn;
+exports.imgEmpty = imgEmpty;
 exports.testCheck = testCheck;

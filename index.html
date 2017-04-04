@@ -26,8 +26,7 @@
                 <li ng-repeat="product in products">
                   <a href="#">
                     <div class="col-xs-4">
-                      <div class="pic">
-                      </div>
+                      <img class="pic" ng-src="{{ product.pic }}" />
                     </div>
                     <div class="col-xs-8">
                       <div class="desc">
@@ -69,9 +68,11 @@
   <div ng-controller="quizController">
     <div class="container">
       <div class="col-xs-2">
-        <span class="badge-big">+{{ question.cost }} баллов</span>
-        <span id="description">Тест считается сданным, если вы не допустили ни одной ошибки.<br><br>Ваш текущий баланс баллов: <b>{{ points }}</b>
-        </span>
+        <div ng-show="!isSuccessful">
+          <span class="badge-big">+{{ question.cost }} баллов</span>
+          <span id="description">Тест считается сданным, если вы не допустили ни одной ошибки.<br><br>Ваш текущий баланс баллов: <b>{{ points }}</b>
+          </span>
+        </div>
       </div>
 
       <div class="col-xs-8">
@@ -116,7 +117,7 @@
             <div class="congrats-badges">
               <div class="badge">
                 <div class="badge-title">Вы получили</div><br>
-                <div class="badge-content">300 баллов</div>
+                <div class="badge-content">{{ points }} баллов</div>
               </div>
               <div class="badge">
                 <div class="badge-title">Теперь вы в рейтинге на</div>
